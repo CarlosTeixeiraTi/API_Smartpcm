@@ -1,0 +1,21 @@
+{
+  "name": "smartpcm",
+  "version": "1.0.0",
+  "description": "Welcome to your new CAP project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sap/cds": "^9",
+    "axios": "^1.18.1"
+  },
+  "cds": {
+    "requires": {
+      "db": false
+    }
+  }
+}

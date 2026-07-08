@@ -1,0 +1,113 @@
+nohup: ignoring input
+[cds] - loaded model from 2 file(s):
+ 
+  srv/service.cds
+  db/schema.cds
+
+[cds] - using auth strategy { kind: 'mocked' }
+[cds] - serving SmartPCMService {
+  at: [ '/odata/v4/smart-pcm' ],
+  decl: 'srv/service.cds:3',
+  impl: 'srv/service.js'
+}
+[cds] - server listening on { url: 'http://localhost:4004' }
+[cds] - server v9.9.2 launched in 350 ms
+[odata] - GET /odata/v4/smart-pcm/Rastreio 
+[odata] - GET /odata/v4/smart-pcm/$metadata 
+[odata] - GET /odata/v4/smart-pcm/ 
+[odata] - GET /odata/v4/smart-pcm/Rastreio 
+[odata] - GET /odata/v4/smart-pcm/$metadata { 'sap-language': 'EN' }
+[odata] - GET /odata/v4/smart-pcm/Rastreio 
+[odata] - GET /odata/v4/smart-pcm/Rastreio 
+[odata] - GET /odata/v4/smart-pcm/Rastreio 
+[odata] - GET /odata/v4/smart-pcm/Rastreio 
+[odata] - GET /odata/v4/smart-pcm/$metadata 
+[odata] - GET /odata/v4/smart-pcm/$metadata { 'sap-language': 'EN' }
+[odata] - GET /odata/v4/smart-pcm/$metadata { 'sap-language': 'EN' }
+[odata] - GET /odata/v4/smart-pcm/$metadata { 'sap-language': 'EN' }
+[odata] - GET /odata/v4/smart-pcm/Rastreio 
+[odata] - GET /odata/v4/smart-pcm/$metadata { 'sap-language': 'EN' }
+[odata] - GET /odata/v4/smart-pcm/$metadata { 'sap-language': 'EN' }
+[odata] - GET /odata/v4/smart-pcm/$metadata { 'sap-language': 'EN' }
+[odata] - GET /odata/v4/smart-pcm/$metadata { 'sap-language': 'EN' }
+[odata] - GET /odata/v4/smart-pcm/$batch 
+[error] - 405 - Error: Method GET is not allowed for calls to $batch endpoint
+    at odata_batch (/home/adminvale/API_Smartpcm/smartpcm/node_modules/@sap/cds/libx/odata/middleware/batch.js:668:11)
+    at Layer.handleRequest (/home/adminvale/API_Smartpcm/smartpcm/node_modules/router/lib/layer.js:152:17)
+    at next (/home/adminvale/API_Smartpcm/smartpcm/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/adminvale/API_Smartpcm/smartpcm/node_modules/router/lib/route.js:117:3)
+    at handle (/home/adminvale/API_Smartpcm/smartpcm/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/adminvale/API_Smartpcm/smartpcm/node_modules/router/lib/layer.js:152:17)
+    at /home/adminvale/API_Smartpcm/smartpcm/node_modules/router/index.js:295:15
+    at processParams (/home/adminvale/API_Smartpcm/smartpcm/node_modules/router/index.js:582:12)
+    at next (/home/adminvale/API_Smartpcm/smartpcm/node_modules/router/index.js:291:5)
+    at http_body_parser_next (/home/adminvale/API_Smartpcm/smartpcm/node_modules/@sap/cds/libx/http/body-parser.js:37:7) {
+  code: '405'
+}
+[odata] - GET /odata/v4/smart-pcm/$batch 
+[error] - 405 - Error: Method GET is not allowed for calls to $batch endpoint
+    at odata_batch (/home/adminvale/API_Smartpcm/smartpcm/node_modules/@sap/cds/libx/odata/middleware/batch.js:668:11)
+    at Layer.handleRequest (/home/adminvale/API_Smartpcm/smartpcm/node_modules/router/lib/layer.js:152:17)
+    at next (/home/adminvale/API_Smartpcm/smartpcm/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/adminvale/API_Smartpcm/smartpcm/node_modules/router/lib/route.js:117:3)
+    at handle (/home/adminvale/API_Smartpcm/smartpcm/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/adminvale/API_Smartpcm/smartpcm/node_modules/router/lib/layer.js:152:17)
+    at /home/adminvale/API_Smartpcm/smartpcm/node_modules/router/index.js:295:15
+    at processParams (/home/adminvale/API_Smartpcm/smartpcm/node_modules/router/index.js:582:12)
+    at next (/home/adminvale/API_Smartpcm/smartpcm/node_modules/router/index.js:291:5)
+    at http_body_parser_next (/home/adminvale/API_Smartpcm/smartpcm/node_modules/@sap/cds/libx/http/body-parser.js:37:7) {
+  code: '405'
+}
+[odata] - GET /odata/v4/smart-pcm/$metadata { 'sap-language': 'EN' }
+[odata] - GET /odata/v4/smart-pcm/$metadata { 'sap-language': 'EN' }
+[odata] - GET /odata/v4/smart-pcm/Rastreio 
+[odata] - GET /odata/v4/smart-pcm/Rastreio/ { '$format': 'json' }
+[error] - 400 - Error: Element "id" does not contain a valid Integer
+    at _convertVal (/home/adminvale/API_Smartpcm/smartpcm/node_modules/@sap/cds/libx/odata/parse/afterburner.js:165:13)
+    at _processSegments (/home/adminvale/API_Smartpcm/smartpcm/node_modules/@sap/cds/libx/odata/parse/afterburner.js:345:21)
+    at module.exports [as afterburner] (/home/adminvale/API_Smartpcm/smartpcm/node_modules/@sap/cds/libx/odata/parse/afterburner.js:942:36)
+    at _enhanceCqn (/home/adminvale/API_Smartpcm/smartpcm/node_modules/@sap/cds/libx/odata/index.js:73:19)
+    at Object.parse (/home/adminvale/API_Smartpcm/smartpcm/node_modules/@sap/cds/libx/odata/index.js:125:13)
+    at odata_parse_url (/home/adminvale/API_Smartpcm/smartpcm/node_modules/@sap/cds/libx/odata/middleware/parse.js:12:28)
+    at Layer.handleRequest (/home/adminvale/API_Smartpcm/smartpcm/node_modules/router/lib/layer.js:152:17)
+    at trimPrefix (/home/adminvale/API_Smartpcm/smartpcm/node_modules/router/index.js:342:13)
+    at /home/adminvale/API_Smartpcm/smartpcm/node_modules/router/index.js:297:9
+    at processParams (/home/adminvale/API_Smartpcm/smartpcm/node_modules/router/index.js:582:12) {
+  code: '400'
+}
+[odata] - GET /odata/v4/smart-pcm/ { '$format': 'json' }
+[odata] - GET /odata/v4/smart-pcm/$metadata 
+[odata] - HEAD /odata/v4/smart-pcm/ 
+[odata] - GET /odata/v4/smart-pcm/$metadata { 'sap-language': 'EN' }
+[odata] - POST /odata/v4/smart-pcm/$batch 
+[odata] - > GET /Rastreio { '$count': 'true', '$select': 'id', '$skip': '0', '$top': '30' }
+[odata] - POST /odata/v4/smart-pcm/$batch 
+[odata] - > GET /Rastreio { '$count': 'true', '$select': 'id', '$skip': '0', '$top': '30' }
+[odata] - POST /odata/v4/smart-pcm/$batch 
+[odata] - > GET /Rastreio { '$count': 'true', '$select': 'id', '$skip': '0', '$top': '30' }
+[odata] - GET /odata/v4/smart-pcm/$metadata` 
+[error] - 404 - Error: Invalid resource path "SmartPCMService.$metadata`"
+    at module.exports [as afterburner] (/home/adminvale/API_Smartpcm/smartpcm/node_modules/@sap/cds/libx/odata/parse/afterburner.js:930:11)
+    at _enhanceCqn (/home/adminvale/API_Smartpcm/smartpcm/node_modules/@sap/cds/libx/odata/index.js:73:19)
+    at Object.parse (/home/adminvale/API_Smartpcm/smartpcm/node_modules/@sap/cds/libx/odata/index.js:125:13)
+    at odata_parse_url (/home/adminvale/API_Smartpcm/smartpcm/node_modules/@sap/cds/libx/odata/middleware/parse.js:12:28)
+    at Layer.handleRequest (/home/adminvale/API_Smartpcm/smartpcm/node_modules/router/lib/layer.js:152:17)
+    at trimPrefix (/home/adminvale/API_Smartpcm/smartpcm/node_modules/router/index.js:342:13)
+    at /home/adminvale/API_Smartpcm/smartpcm/node_modules/router/index.js:297:9
+    at processParams (/home/adminvale/API_Smartpcm/smartpcm/node_modules/router/index.js:582:12)
+    at next (/home/adminvale/API_Smartpcm/smartpcm/node_modules/router/index.js:291:5)
+    at set_odata_version (/home/adminvale/API_Smartpcm/smartpcm/node_modules/@sap/cds/libx/odata/ODataAdapter.js:34:7) {
+  code: '404'
+}
+[odata] - GET /odata/v4/smart-pcm/$metadata 
+[odata] - GET /odata/v4/smart-pcm/$metadata { 'sap-language': 'EN' }
+[odata] - HEAD /odata/v4/smart-pcm/ 
+[odata] - POST /odata/v4/smart-pcm/$batch 
+[odata] - > GET /Rastreio { '$count': 'true', '$select': 'id', '$skip': '0', '$top': '30' }
+[odata] - POST /odata/v4/smart-pcm/$batch 
+[odata] - > GET /Rastreio { '$count': 'true', '$select': 'id', '$skip': '0', '$top': '30' }
+[odata] - POST /odata/v4/smart-pcm/$batch 
+[odata] - > GET /Rastreio { '$count': 'true', '$select': 'id', '$skip': '0', '$top': '30' }
+[odata] - GET /odata/v4/smart-pcm/$metadata 
+[odata] - GET /odata/v4/smart-pcm/$metadata 
+[odata] - GET /odata/v4/smart-pcm/$metadata 
